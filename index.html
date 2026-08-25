@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Support for Carzzy Apps games, tools, leaderboards, and community projects." />
+  <title>Support | Carzzy Apps</title>
+  <style>
+    :root {
+      --page-bg: #0a0a0a;
+      --header-bg: #171717;
+      --panel-bg: #171717;
+      --panel-hover: #202020;
+      --accent: #00d1b2;
+      --text-main: #f5f5f5;
+      --text-muted: #bdbdbd;
+      --border: #363636;
+      --content-width: 960px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--page-bg);
+      color: var(--text-main);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); }
+    a:hover { text-decoration: underline; }
+
+    .page {
+      width: min(var(--content-width), 100% - 32px);
+      margin: 0 auto;
+      padding: 56px 0 72px;
+    }
+
+    .intro { margin-bottom: 40px; text-align: center; }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 { line-height: 1.2; }
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.25rem); }
+
+    .intro p:not(.eyebrow) {
+      max-width: 620px;
+      margin: 14px auto 0;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    .section { margin-top: 48px; scroll-margin-top: 24px; }
+
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+    }
+
+    h2 { margin: 0; color: var(--accent); font-size: 1.55rem; }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .link-grid, .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .site-card, .faq-item {
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .site-card {
+      display: block;
+      min-height: 120px;
+      padding: 20px;
+      text-decoration: none;
+      transition: background-color 150ms ease, border-color 150ms ease;
+    }
+
+    .site-card:hover {
+      background: var(--panel-hover);
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+
+    .site-card h3 { margin: 0 0 8px; color: var(--accent); font-size: 1.1rem; }
+    .site-card p, .faq-item p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
+
+    .quick-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .quick-links a {
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 8px 12px;
+      background: var(--panel-bg);
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .quick-links a:hover {
+      background: var(--accent);
+      color: var(--page-bg);
+      text-decoration: none;
+    }
+
+    .faq-item { padding: 18px 20px; }
+    .faq-item h3 { margin: 0 0 8px; color: var(--text-main); font-size: 1rem; }
+    .faq-item strong { color: var(--text-main); }
+
+    .contact {
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel-bg);
+    }
+
+    .contact .section-heading { margin-bottom: 12px; }
+    .contact p { margin: 8px 0; color: var(--text-muted); }
+
+    footer {
+      padding: 24px 16px 32px;
+      border-top: 1px solid #222;
+      background: var(--header-bg);
+      color: var(--text-muted);
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 680px) {
+      .page { padding-top: 40px; }
+      .intro { text-align: left; }
+      .intro p:not(.eyebrow) { margin-left: 0; }
+      .link-grid, .faq-grid { grid-template-columns: 1fr; }
+      .section-heading { display: block; }
+      .section-heading p { margin-top: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="intro">
+      <p class="eyebrow">Carzzy Apps Support</p>
+      <h1>Find help for all of Carzzy Apps</h1>
+      <p>Answers for our games, creative tools, leaderboards, and community projects, all in one place.</p>
+    </section>
+
+    <section class="section" aria-labelledby="explore-heading">
+      <div class="section-heading"><h2 id="explore-heading">Explore Carzzy Apps</h2><p>Jump to the product or service you need.</p></div>
+      <div class="link-grid">
+        <a class="site-card" href="https://www.carzzyapps.com/"><h3>Games &amp; Apps</h3><p>Browse the complete collection, from Rhythm Runner and Hockey Shootout to calculators and music tools.</p></a>
+        <a class="site-card" href="https://www.carzzyapps.com/Leaderboards"><h3>Leaderboards</h3><p>Check scores, compare results, and find out where your latest run or challenge stands.</p></a>
+        <a class="site-card" href="https://www.carzzyapps.com/scymores-games"><h3>Scymore's Games</h3><p>Discover the games and experiments made by Scymore.</p></a>
+        <a class="site-card" href="https://www.carzzyapps.com/contact-us"><h3>Contact Us</h3><p>Send a question, report a problem, suggest an improvement, or share an idea for a future game.</p></a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="quick-heading">
+      <div class="section-heading"><h2 id="quick-heading">Support Topics</h2></div>
+      <div class="quick-links">
+        <a href="#getting-started">Getting started</a><a href="#games-apps">Games &amp; apps</a><a href="#leaderboards">Leaderboards</a><a href="#troubleshooting">Troubleshooting</a><a href="#contact">Contact support</a>
+      </div>
+    </section>
+
+    <section id="getting-started" class="section" aria-labelledby="getting-started-heading">
+      <div class="section-heading"><h2 id="getting-started-heading">Getting Started</h2></div>
+      <div class="faq-grid">
+        <article class="faq-item"><h3>Do I need an account?</h3><p>No account is required for most Carzzy Apps. Open a game or tool from the homepage and start using it right away.</p></article>
+        <article class="faq-item"><h3>How do I use an app?</h3><p>Choose an app from <strong>Games &amp; Apps</strong>, then follow the controls shown inside that app. Each project has its own rules and settings.</p></article>
+        <article class="faq-item"><h3>Are the apps mobile-friendly?</h3><p>Many Carzzy Apps support smartphones. If a game feels cramped, try landscape orientation or a larger browser window.</p></article>
+        <article class="faq-item"><h3>Where can I find new projects?</h3><p>New releases and updates appear on the Carzzy Apps homepage. Look for the <strong>NEW</strong> label in the games and apps list.</p></article>
+      </div>
+    </section>
+
+    <section id="games-apps" class="section" aria-labelledby="games-apps-heading">
+      <div class="section-heading"><h2 id="games-apps-heading">Games &amp; Apps</h2></div>
+      <div class="faq-grid">
+        <article class="faq-item"><h3>A game or tool is not responding.</h3><p>Refresh the page and make sure your browser is up to date. Closing other tabs can also help apps that use audio, timers, or animation.</p></article>
+        <article class="faq-item"><h3>Can I save or share my work?</h3><p>Saving and sharing depends on the individual app. Check for a Save, Share, or Copy Link control within the project you are using.</p></article>
+        <article class="faq-item"><h3>How do I report a bug?</h3><p>Include the app name, what you expected to happen, what happened instead, your browser, and a screenshot when you contact support.</p></article>
+        <article class="faq-item"><h3>How can I suggest a feature?</h3><p>Use the contact page to describe the idea and which game or app it would improve. Suggestions for future Jeopardy questions are welcome too.</p></article>
+      </div>
+    </section>
+
+    <section id="leaderboards" class="section" aria-labelledby="leaderboards-heading">
+      <div class="section-heading"><h2 id="leaderboards-heading">Leaderboards</h2></div>
+      <div class="faq-grid">
+        <article class="faq-item"><h3>How do I submit a score?</h3><p>Finish the relevant challenge, then use the submission control provided by that game. Follow the on-screen instructions carefully.</p></article>
+        <article class="faq-item"><h3>My score is missing.</h3><p>Confirm that you completed the submission step and entered your name correctly. If it still does not appear, contact us with the game and approximate submission time.</p></article>
+        <article class="faq-item"><h3>Can I change a leaderboard entry?</h3><p>Leaderboard entries may be reviewed for mistakes or inappropriate content. Contact support with the entry details so it can be checked.</p></article>
+        <article class="faq-item"><h3>Why is my result different?</h3><p>Some games use timing, device input, or browser behavior when calculating results. Use the same settings and check the game instructions before retrying.</p></article>
+      </div>
+    </section>
+
+    <section id="troubleshooting" class="section" aria-labelledby="troubleshooting-heading">
+      <div class="section-heading"><h2 id="troubleshooting-heading">Troubleshooting</h2></div>
+      <div class="faq-grid">
+        <article class="faq-item"><h3>The page will not load.</h3><p>Check your connection, reload the page, and try a private browser window. A temporary browser extension or cached file may be interfering.</p></article>
+        <article class="faq-item"><h3>Audio or controls are not working.</h3><p>Check your device volume and browser permissions, then interact with the page once before starting audio. Reloading usually restores a stuck control.</p></article>
+        <article class="faq-item"><h3>The layout looks incorrect.</h3><p>Zoom your browser back to 100% and try a current version of Chrome, Edge, Safari, or Firefox. On a phone, rotate to landscape for games designed around a wide screen.</p></article>
+        <article class="faq-item"><h3>What details should I send with a report?</h3><p>Tell us the page or app, device, browser version, steps to reproduce the issue, and any error message you saw.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+      <div class="section-heading"><h2 id="contact-heading">Contact Support</h2></div>
+      <p>Still stuck? Visit the <a href="/contact-us">Contact</a> page and tell us what happened. A clear description and screenshot make it much easier to help.</p>
+      <p><strong>Email:</strong> <a href="mailto:carzzyapps@gmail.com">carzzyapps@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+14782279992">478-CARZZY-A (227999-2)</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">Avis &amp; DeBus v1.0.0 PRO</footer>
+</body>
+</html>
